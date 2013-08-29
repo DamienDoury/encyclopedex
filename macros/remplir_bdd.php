@@ -1,17 +1,7 @@
 <?php
 session_start();
 
-//Connexion avec la bdd.
-try
-{
-	$bdd = new PDO('mysql:host=mysql.1freehosting.com;dbname=u381118947_pokedex', 'u381118947_root', 'mdpmdp');
-}
-catch (Exception $e)
-{
-	die("Voici l'erreur : " . $e->getMessage());
-}
-//Fin connexion avec la bdd.
-
+include_once "../bdd.php";
 
 $liste_pokemon = $bdd->query("
 SELECT *
