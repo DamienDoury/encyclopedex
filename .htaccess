@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteOptions Inherit
+RewriteBase /
+
+RewriteRule ^/?pokedex/(.*) /pokedex.php?r=$1 [L]
+RewriteRule ^/?pokedex_tile/(.*) /pokedex_tile.php?r=$1 [L]
+RewriteRule ^/?i$ /phpinfo.php [L]

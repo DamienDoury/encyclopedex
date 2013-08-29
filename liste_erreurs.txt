@@ -1,0 +1,17 @@
+v1!
+
+A faire :
+Rediriger sur la page originale a la fin du tuto. Le tuto se declenche au debut, pas lorsque l'on ecrit.
+Traduction Anglais
+Ajouter critere : types attaque Physique, Spe et Statut.
+Ajouter critere : type attaque.
+
+Problemes :
+On ne peut pas recuperer une URL contenant une statistique encodee.
+
+1) Faire cette foutue version anglaise.
+2) Faire les fiches
+3) Bulle sur champ vide & traduction requete.
+Ameliorer l'info-bulle pour qu'elle affiche des resultats pertinents supplementaires en fonction du filtre (comme la liste des capacites speciales, ...).
+Rendre possible ajout "!" pour obtenir la condition inverse (Ex: !Vol pour la liste des pokemons qui ne connaissent pas l'attaque Vol).
+Les nouveaux reglages enregistrent un cookie et actualisent l'affichage en temps reel.
