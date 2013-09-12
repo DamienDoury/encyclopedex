@@ -1,0 +1,595 @@
+body
+{
+	/*background-image: url('images/backgrounds/bg_stripe.png'), url("images/backgrounds/bg_degrade.png");
+	background-position: left top, left top;
+	background-repeat: repeat, repeat-x;
+	background-attachment: fixed;
+	background-color: #D7D7B1;*/
+	
+	
+	
+	/*background-image: linear-gradient(to top, #4C2121, #D7D7B1);
+	background-image: url('images/backgrounds/bg_stripe.png'), -o-linear-gradient(to bottom, #4C2121, #D7D7B1);
+	background-image: -moz-linear-gradient(to top, #4C2121, #D7D7B1);
+	background-image: -webkit-linear-gradient(to bottom, #4C2121, #D7D7B1);
+	background-image: -ms-linear-gradient(to bottom, #4C2121, #D7D7B1);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.00, #4C2121),
+		color-stop(1.00, #D7D7B1)
+	);
+	background-color: #4C2121;
+	background-size: 1px 1000px;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: left top;*/
+	
+	font-family: 'Tahoma', sans-serif;
+	font-variant: small-caps;
+	color: #792400;
+}
+
+#fond
+{
+	background-image: url("/images/backgrounds/fond_body.png");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-color: #4C2121;
+	
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+img
+{
+	border: none;
+}
+
+.equipe
+{
+	text-align: center;
+}
+
+.popup
+{
+	display: none;
+	padding: 1em;
+	
+	font-family: Verdana;
+	color: white;
+	size: 4em;
+	text-align: center;
+	
+	background-color: #888888;
+	
+	border: 4px outset #999999;
+	border-radius: 20px;
+	
+	box-shadow: 0 0 35px 5px #999999;
+}
+
+.popup div p
+{
+	text-align: left;
+}
+
+.popup div div
+{
+	margin: auto;
+	max-width: 12em;
+}
+
+.popup input:first-of-type
+{
+	margin-top: 1.5em;
+}
+
+#pop > input
+{
+	min-width: 25em;
+	text-align: center;
+	
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px 5px #FFDE8D;
+}
+
+#tuto > div
+{
+	display: none;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#social
+{
+	position: absolute;
+	left: auto;
+	right: 0;
+}
+
+#social div
+{
+	color: #ECEEF5;
+}
+
+#social div a
+{
+	color: #CCCCCC;
+}
+
+#logo
+{
+	position: absolute;
+	left: 0;
+	right: auto;
+}
+
+#logo img
+{
+	margin-left: 0.5em;
+	width: 320px;
+}
+
+.social_button
+{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	vertical-align: baseline;
+	display: inline-block;
+	width: 90px;
+	height: 20px;
+}
+
+#info_bulle_survol
+{
+	display: none;
+	position: fixed;
+	z-index: 4;
+	
+	width: 90px;
+	margin: 0px;
+	padding: 3px;
+	
+	background-color: #FFEAA4;
+	text-align: center;
+	border-width: 1px;
+	border-style: outset;
+	border-color: black;
+	font-size: 14px;
+}
+
+#header
+{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 74px;
+	top: 0;
+	left: 0;
+	padding-top: 10px;
+	text-align: center;
+	
+	background-image: url("/images/backgrounds/fond_header.png");
+	background-repeat: repeat-x;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(34, 34, 34, 0.8);
+}
+
+#filtre
+{
+	position: relative;
+	z-index: 2;
+}
+
+#filtre > *
+{
+	vertical-align: bottom;
+}
+
+#filtre > *:hover
+{
+	cursor: pointer;
+}
+
+#filtre > div
+{
+	display: inline;
+	
+	border: 1px solid green;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	
+	margin-left: -1px;
+}
+
+#filtre > img
+{
+	margin: 0 1em;
+}
+
+#saisie
+{
+	position: relative;
+	z-index: 2;
+	outline-style: none;
+	
+	width: 240px;
+	height: 24px;
+	margin: 0; 
+	padding: 0;
+	
+	text-align: center;
+	font-size: 16px;
+	font-variant: small-caps;
+	color: #792400;
+	
+	border-style: dotted;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+	//box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	
+	background-color: #F6E652;
+	//background-color: #8FD0D0;
+	//background-color: transparent;
+	background-image: url("/images/backgrounds/fond_critere.png"), url("/images/icones/loupe 16x16.png");
+	background-repeat: repeat-x, no-repeat;
+	background-position: bottom, 2% center;
+}
+
+#saisie::-webkit-input-placeholder { text-align: center; font-size: 0.8em; color: gray; }
+#saisie::-moz-placeholder { text-align: center; font-size: 0.8em; color: gray; } /* firefox 19+ */
+#saisie:-ms-input-placeholder { text-align: center; font-size: 0.8em; color: gray; } /* ie */
+#saisie:-moz-placeholder { text-align: center; font-size: 0.8em; color: gray; }
+
+#menu
+{
+	position: absolute;
+	z-index: 3;
+	
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+					
+	margin: 0;
+	padding: 0;
+	width: 15em;
+	text-align: center;
+}
+
+#menu > *
+{
+	text-align: center;
+	width: 240px;
+	height: 32px;
+	position: relative;
+	
+	margin-top: -1px;
+	
+	border: 1px solid brown;
+
+	/* Firefox */
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+
+	/* Safari, Opera, and Chrome */
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+
+	/* W3C */
+	display: box;
+	box-pack: center;
+	box-align: center;
+}
+
+#menu > div:hover
+{
+	cursor: pointer;
+}
+
+#menu > div > *
+{
+	vertical-align: middle;
+}
+
+@media (max-device-width: 900px)
+{
+	#fond
+	{
+		background-image: linear-gradient(to top, #4C2121, #D7D7B1);
+		background-image: -o-linear-gradient(to bottom, #4C2121, #D7D7B1);
+		background-image: -moz-linear-gradient(to top, #4C2121, #D7D7B1);
+		background-image: -webkit-linear-gradient(to bottom, #4C2121, #D7D7B1);
+		background-image: -ms-linear-gradient(to bottom, #4C2121, #D7D7B1);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.00, #4C2121),
+			color-stop(1.00, #D7D7B1)
+		);
+		background-color: #4C2121;
+		background-size: 1px 1000px;
+		background-repeat: repeat-x;
+		background-attachment: fixed;
+		background-position: left top;
+	}
+}
+
+@media (max-device-width: 900px), (max-width: 900px)
+{
+	#header
+	{
+		height: auto;
+		
+		background-color: #550000;
+		background-image: url("/images/backgrounds/fond_header.png");
+		background-repeat: repeat-x;
+		background-position: bottom;
+	}
+	
+	#logo
+	{
+		position: relative;
+		left: auto;
+		right: auto;
+	}
+	
+	#social
+	{
+		position: relative;
+		left: auto;
+		right: auto;
+	}
+	
+	#espace_recherche
+	{
+		position: relative;
+		left: auto;
+		right: auto;
+	}
+	
+	#total
+	{
+		padding-top: 150px;
+	}
+}
+
+.pokemon
+{
+	background-color: #FFDE8D; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.numero
+{
+	background-color: #BEBEBE; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.capspe
+{
+	background-color: #FEA99A; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.type
+{
+	background-color: #3AFC9B; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.attaque
+{
+	background-color: #FF9966; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.stat
+{
+	background-color: #5050FF; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.carac_attaque
+{
+	background-color: #FFFFFF; 
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px solid brown;
+}
+
+.resultat
+{
+	display: inline-block;
+	float: left; 
+	min-width: 96px;
+	min-height: 96px;
+}
+
+.resultat:hover
+{
+	cursor: pointer;
+	background-image: url("/images/icones/select 96x96.png");
+	background-repeat: no-repeat;
+}
+
+/*.resultat img:hover
+{
+	image-rendering: pixelated;
+	position: absolute;
+	margin-top: -48px;
+	margin-left: -48px;
+	height: 192px;
+	width: 192px;
+}*/
+
+.resultat > div
+{
+	float: right;
+	text-align: right;
+	
+	color: white;
+	font-family: Courier New, monospace;
+	font-size: 13px; 
+}
+
+.resultat > div a
+{
+	display: block;
+	margin-left: -96px;
+	position: relative;
+}
+
+.resultat > div > a:nth-child(even)
+{
+	text-shadow: -1px 0px 2px red, 0px 1px 2px red, 1px 0px 2px red, 0px -1px 2px red;					
+}
+
+.resultat > div > a:nth-child(odd)
+{
+	text-shadow: -1px 0px 2px blue, 0px 1px 2px blue, 1px 0px 2px blue, 0px -1px 2px blue;
+}
+
+@-moz-document url-prefix() /* We activate this feature only under Firefox because it's the only one to implement the crisp edges. */
+{			
+	.resultat img 
+	{
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -o-crisp-edges;
+		image-rendering: optimize-contrast;
+		image-rendering: -webkit-optimize-contrast;
+		-ms-interpolation-mode: nearest-neighbor;
+
+		transition: all 0.35s;
+		-webkit-transition: all 0.35s;
+	}
+
+	.resultat img:hover
+	{
+		transform: scale(2);
+		-ms-transform: scale(2);
+		-webkit-transform: scale(2);
+
+		z-index: 5;
+	}
+
+	.resultat:hover
+	{
+		background: none;
+	}
+}
+
+#footer
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 106px;
+	text-align: center;
+	top: 100%;
+	margin-top: -106px;
+	padding: 5px;
+	left: 0;
+	
+	background-image: url("/images/backgrounds/fond_footer.png");
+	background-repeat: repeat-x;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	border-top: 1px solid rgba(34, 34, 34, 0.8);
+}
+
+#footer > div
+{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#footer input
+{
+	width: 100px;
+
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: green;
+}
+
+#equipe
+{
+	margin: auto;
+	clear: both;
+	max-width: 600px;
+}
+
+.loading
+{
+	animation: Rotate 1s infinite;
+	-webkit-animation: Rotate 1s infinite;
+}
+
+@keyframes Rotate
+{
+	0%   {transform: rotate(0deg);}
+	0%   {-webkit-transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes Rotate /* Safari and Chrome */
+{
+	0%   {transform: rotate(0deg);}
+	0%   {-webkit-transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes Glowing
+{
+	0%   {box-shadow: 0px 0px 10px 4px yellow;}
+	100% {box-shadow: 0px 0px 30px 12px white;}
+}
+
+@-webkit-keyframes Glowing /* Safari and Chrome */
+{
+	0%   {box-shadow: 0px 0px 10px 4px yellow;}
+	100% {box-shadow: 0px 0px 30px 12px white;}
+}

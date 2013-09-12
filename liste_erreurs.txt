@@ -1,0 +1,39 @@
+v1!
+
+A faire :
+Ameliorer le systeme de traduction grace a des fichiers de traduction qui contiennent des constantes.
+Implementer les sprites avec les formes, et aussi pour les miniatures et les types.
+Creer des fiches avec redirection sur bulba ou bip et preciser que c'est en construction.
+	-> iframe de bulba ??????
+traduire les icones de types.
+
+Ajouter critere : types attaque Physique, Spe et Statut.
+Ajouter critere : type attaque.
+
+Legers problemes :
+- l'infobulle se rafraichie mal.
+- l'actualisation de la page ignore parfois les parametres dans l'url.
+
+Problemes :
+1) Faire cette foutue version anglaise.
+2) Faire les fiches
+3) Bulle sur champ vide & traduction requete.
+Ameliorer l'info-bulle pour qu'elle affiche des resultats pertinents supplementaires en fonction du filtre (comme la liste des capacites speciales, ...).
+Rendre possible ajout "!" pour obtenir la condition inverse (Ex: !Vol pour la liste des pokemons qui ne connaissent pas l'attaque Vol).
+Les nouveaux reglages enregistrent un cookie et actualisent l'affichage en temps reel.
+
+Liste zones a traduire :
+langs/fr.php
+	- DONE. titre et meta-tags
+	- DONE. bdd js (dont les stats et carac_attaque!)
+	- redirection sur bulba ou bip en attendant l'implementation des fiches
+	- DONE. function afficher_liste_resultats
+	- DONE. tuto
+	- DONE. partie JS tuto
+	- DONE. share_url div
+	- DONE. placeholder search box
+	
+	- affichage icone type correspondant
+
+ajax/get_infobulle.php
+	- affichage icone type correspondant

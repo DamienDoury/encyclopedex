@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://encyclopedex.com/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://en.encyclopedex.com/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://fr.encyclopedex.com/" />
+    </url>
+
+    <url>
+        <loc>http://en.encyclopedex.com/</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="http://fr.encyclopedex.com/" />
+    </url>
+
+    <url>
+        <loc>http://fr.encyclopedex.com/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://en.encyclopedex.com/" />
+    </url>
+
+    <url>
+        <loc>http://en.encyclopedex.com/pokedex/</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="http://fr.encyclopedex.com/pokedex/" />
+    </url>
+
+    <url>
+        <loc>http://fr.encyclopedex.com/pokedex/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://en.encyclopedex.com/pokedex/" />
+    </url>
+</urlset>
