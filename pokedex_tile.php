@@ -3613,8 +3613,12 @@ setcookie("deja_visite", true, time() + 3600 * 24 * 365 * 2); // On se souvient 
 									for(var i = 0; i < pkmn.stats.length; i++)
 									{
 										var stat = pkmn.stats[i];
+<<<<<<< HEAD
 										var stat_name = $("#filtre .stat:eq(" + i + ")").text().trim().match("^[^ ]+");
 										temp += "<a>" + stat_name + "&nbsp;" + stat.val + "</a>";
+=======
+										temp += "<a>" + stat.name + "&nbsp;" + stat.val + "</a>";
+>>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9
 									}
 
 									temp += "</div>";

@@ -22,7 +22,11 @@ else
 
 $pokemon = $liste_pokemon->fetch();
 
+<<<<<<< HEAD
 $nom = htmlentities($pokemon["nom_" . $_GET["lang"]]);
+=======
+$nom = htmlentities($pokemon["nom"]);
+>>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9
 
 if(preg_match("#Nidoran\?#", $nom)) // Cas particulier pour ce CONNARD de Nidoran.
 	$nom = preg_replace("#\?#", ($_GET["id"] == 29 ? "&#9792;" : "&#9794;"), $nom);

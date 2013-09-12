@@ -3,4 +3,9 @@ RewriteOptions Inherit
 RewriteBase /
 
 RewriteRule ^/?pokedex/(.*) /pokedex.php?r=$1 [L]
+<<<<<<< HEAD
 RewriteRule ^/?pokedex_tile/(.*) /pokedex_tile.php?r=$1 [L]
+=======
+RewriteRule ^/?pokedex_tile/(.*) /pokedex_tile.php?r=$1 [L]
+RewriteRule ^/?i$ /phpinfo.php [L]
+>>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9

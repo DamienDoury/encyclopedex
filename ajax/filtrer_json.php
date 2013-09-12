@@ -314,7 +314,16 @@ foreach($liste_pokemon AS $pokemon) // On parcourt la liste des Pokemon.
 		{
 			for($i = 2; $i < sizeof($pokemon); $i++)
 			{
+<<<<<<< HEAD
 				$pkmn["s"][] = $pokemon[$i];
+=======
+
+				$stat = array();
+				$stat["name"] = $liste_ordres[$i - 2];
+				$stat["val"] = $pokemon[$i];
+
+				$pkmn["stats"][] = $stat;
+>>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9
 			}
 		}
 

@@ -1,6 +1,7 @@
 v1!
 
 A faire :
+<<<<<<< HEAD
 Ameliorer le systeme de traduction grace a des fichiers de traduction qui contiennent des constantes.
 Implementer les sprites avec les formes, et aussi pour les miniatures et les types.
 Creer des fiches avec redirection sur bulba ou bip et preciser que c'est en construction.
@@ -15,11 +16,22 @@ Legers problemes :
 - l'actualisation de la page ignore parfois les parametres dans l'url.
 
 Problemes :
+=======
+Rediriger sur la page originale a la fin du tuto. Le tuto se declenche au debut, pas lorsque l'on ecrit.
+Traduction Anglais
+Ajouter critere : types attaque Physique, Spe et Statut.
+Ajouter critere : type attaque.
+
+Problemes :
+On ne peut pas recuperer une URL contenant une statistique encodee.
+
+>>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9
 1) Faire cette foutue version anglaise.
 2) Faire les fiches
 3) Bulle sur champ vide & traduction requete.
 Ameliorer l'info-bulle pour qu'elle affiche des resultats pertinents supplementaires en fonction du filtre (comme la liste des capacites speciales, ...).
 Rendre possible ajout "!" pour obtenir la condition inverse (Ex: !Vol pour la liste des pokemons qui ne connaissent pas l'attaque Vol).
+<<<<<<< HEAD
 Les nouveaux reglages enregistrent un cookie et actualisent l'affichage en temps reel.
 
 Liste zones a traduire :
@@ -37,3 +49,6 @@ langs/fr.php
 
 ajax/get_infobulle.php
 	- affichage icone type correspondant
+=======
+Les nouveaux reglages enregistrent un cookie et actualisent l'affichage en temps reel.
+>>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9
