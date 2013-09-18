@@ -6,7 +6,7 @@ Encyclopedex
 *Started March 2013*
 
 
-**Description:** search engine containing almost all the data from the last Pokémon game on Nintendo DS.
+**Description:** search engine containing almost all the data from the lastest Pokémon game on Nintendo DS.
 
 **Innovations:** Invent a simple, intuitive and tiny but complete search system; add tricks with the mouse and the keyboard to use it easily.
 
