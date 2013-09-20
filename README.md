@@ -5,6 +5,7 @@ Encyclopedex
 
 *Started March 2013*
 
+![alt text](http://oi42.tinypic.com/4jp11s.jpg)
 
 **Description:** search engine containing almost all the data from the lastest Pokémon game on Nintendo DS.
 
