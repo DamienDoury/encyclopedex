@@ -20,21 +20,18 @@ else
 	");
 }
 
+$lang = $_COOKIE["lang"];
 $pokemon = $liste_pokemon->fetch();
-
-<<<<<<< HEAD
-$nom = htmlentities($pokemon["nom_" . $_GET["lang"]]);
-=======
-$nom = htmlentities($pokemon["nom"]);
->>>>>>> fce4d4bc4373bcf878d3da1f2601c5920026a5a9
+$nom = htmlentities($pokemon["nom_" . $lang]);
 
 if(preg_match("#Nidoran\?#", $nom)) // Cas particulier pour ce CONNARD de Nidoran.
 	$nom = preg_replace("#\?#", ($_GET["id"] == 29 ? "&#9792;" : "&#9794;"), $nom);
 
-	
-echo '<p id="info_bulle_survol_txt" style="padding-bottom: 3px; margin: 0px;">' . $nom . '</p>
-<img id="info_bulle_survol_img1" src="http://www.pokebip.com/pokemon/pokedex/images/gen5_types/' . $pokemon["type1"] . '.png" />
-<img id="info_bulle_survol_img2" src="http://www.pokebip.com/pokemon/pokedex/images/gen5_types/' . $pokemon["type2"] . '.png" />';
+echo '<p>' . $nom . '</p>
+<a style="background: url(\'/images/pkmn/type/' . $lang . '/type_spritesheet.png\') no-repeat 0px -' . (14 * floor(max($pokemon["type1"], 0))) . 'px;" />&nbsp;</a>';
+
+if($pokemon["type2"] != "-1")
+	echo '<a style="background: url(\'/images/pkmn/type/' . $lang . '/type_spritesheet.png\') no-repeat 0px -' . (14 * floor(max($pokemon["type2"], 0))) . 'px;" />&nbsp;</a>';
 					
 $liste_pokemon->closeCursor();
 ?>

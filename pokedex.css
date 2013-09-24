@@ -1,4 +1,4 @@
-body
+html, body
 {
 	/*background-image: url('images/backgrounds/bg_stripe.png'), url("images/backgrounds/bg_degrade.png");
 	background-position: left top, left top;
@@ -26,6 +26,13 @@ body
 	background-attachment: fixed;
 	background-position: left top;*/
 	
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
 	font-family: 'Tahoma', sans-serif;
 	font-variant: small-caps;
 	color: #792400;
@@ -163,12 +170,32 @@ img
 	margin: 0px;
 	padding: 3px;
 	
-	background-color: #FFEAA4;
+	background-color: rgba(64, 64, 64, 0.8);/*#FFEAA4;*/
 	text-align: center;
-	border-width: 1px;
-	border-style: outset;
-	border-color: black;
+	font-size: 0;
+	color: white;
+
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#info_bulle_survol p
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+
 	font-size: 14px;
+}
+
+#info_bulle_survol a
+{
+	display: inline-block;
+	margin: 1px 3px;
+	width: 32px;
+	height: 14px;
 }
 
 #header
@@ -191,12 +218,14 @@ img
 #filtre
 {
 	position: relative;
+	display: inline-block;
+	margin: auto;
 	z-index: 2;
 }
 
-#filtre > *
+#filtre *
 {
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 #filtre > *:hover
@@ -206,7 +235,9 @@ img
 
 #filtre > div
 {
-	display: inline;
+	display: inline-block;
+	padding: 1px 3px;
+	height: 24px;
 	
 	border: 1px solid green;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -214,9 +245,20 @@ img
 	margin-left: -1px;
 }
 
+#filtre > div:hover a:not(.thumbnail)
+{
+	text-decoration: line-through;
+}
+
 #filtre > img
 {
 	margin: 0 1em;
+}
+
+.filtre_placeholder
+{
+	border: 1px dashed white;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 #saisie
@@ -304,6 +346,11 @@ img
 	vertical-align: middle;
 }
 
+#menu > div > a, #filtre > div > a
+{
+	display: inline-block;
+}
+
 @media (max-device-width: 900px)
 {
 	#fond
@@ -332,6 +379,7 @@ img
 {
 	#header
 	{
+		position: relative;
 		height: auto;
 		
 		background-color: #550000;
@@ -339,7 +387,7 @@ img
 		background-repeat: repeat-x;
 		background-position: bottom;
 	}
-	
+
 	#logo
 	{
 		position: relative;
@@ -361,80 +409,55 @@ img
 		right: auto;
 	}
 	
-	#total
+	#nombre_resultats_recherche
 	{
-		padding-top: 150px;
+		padding-top: 20px !important;
 	}
+}
+
+.pokemon, .numero, .capspe, .type, .attaque, .stat, .carac_attaque
+{
+	background-image: url("/images/backgrounds/fond_critere.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	border: 1px outset brown;
 }
 
 .pokemon
 {
 	background-color: #FFDE8D; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
 	
-	border: 1px solid brown;
 }
 
 .numero
 {
-	background-color: #BEBEBE; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
-	
-	border: 1px solid brown;
+	background-color: #BEBEBE;
 }
 
 .capspe
 {
-	background-color: #FEA99A; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
-	
-	border: 1px solid brown;
+	background-color: #FEA99A;
 }
 
 .type
 {
-	background-color: #3AFC9B; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
-	
-	border: 1px solid brown;
+	background-color: #3AFC9B;
 }
 
 .attaque
 {
-	background-color: #FF9966; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
-	
-	border: 1px solid brown;
+	background-color: #FF9966;
 }
 
 .stat
 {
-	background-color: #5050FF; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
-	
-	border: 1px solid brown;
+	background-color: #5050FF;
 }
 
 .carac_attaque
 {
-	background-color: #FFFFFF; 
-	background-image: url("/images/backgrounds/fond_critere.png");
-	background-repeat: repeat-x;
-	background-position: bottom;
-	
-	border: 1px solid brown;
+	background-color: #FFFFFF;
 }
 
 .resultat
@@ -462,34 +485,45 @@ img
 	width: 192px;
 }*/
 
-.resultat > div
+.resultat > div:first-child
 {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	overflow: hidden;
+}
+
+.resultat .stats
+{
+	display: inline-block;
 	float: right;
 	text-align: right;
+
+	padding-top: 0.5em;
+	padding-left: 0.5em;
 	
 	color: white;
-	font-family: Courier New, monospace;
+	font-family: 'Aldrich', sans-serif;
 	font-size: 13px; 
 }
 
-.resultat > div a
+.resultat .stats a
 {
-	display: block;
-	margin-left: -96px;
 	position: relative;
+	display: block;
 }
 
-.resultat > div > a:nth-child(even)
+.resultat .stats > a:nth-child(even)
 {
-	text-shadow: -1px 0px 2px red, 0px 1px 2px red, 1px 0px 2px red, 0px -1px 2px red;					
+	text-shadow: 0px 1px 2px rgb(32, 0, 0), 1px 0px 2px rgb(32, 0, 0), 1px 1px 2px rgb(32, 0, 0);					
 }
 
-.resultat > div > a:nth-child(odd)
+.resultat .stats > a:nth-child(odd)
 {
-	text-shadow: -1px 0px 2px blue, 0px 1px 2px blue, 1px 0px 2px blue, 0px -1px 2px blue;
+	text-shadow: 0px 1px 2px rgb(192, 0, 0), 1px 0px 2px rgb(192, 0, 0), 1px 1px 2px rgb(192, 0, 0);
 }
 
-@-moz-document url-prefix() /* We activate this feature only under Firefox because it's the only one to implement the crisp edges. */
+/*@-moz-document url-prefix()
 {			
 	.resultat img 
 	{
@@ -516,7 +550,7 @@ img
 	{
 		background: none;
 	}
-}
+}*/
 
 #footer
 {
@@ -558,6 +592,12 @@ img
 	margin: auto;
 	clear: both;
 	max-width: 600px;
+}
+
+#equipe *
+{
+	transition: all 1s;
+	-webkit-transition: all 1s;
 }
 
 .loading
